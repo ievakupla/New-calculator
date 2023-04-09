@@ -1,5 +1,22 @@
 const input1 =  document.querySelector(".js-teksts")
 const plusButton = document.querySelector(".js-plus")
 
-console.log(input1);
-console.log(plusButton);
+const Add = (skaitlis1, skaitlis2) => {
+    return skaitlis1 + skaitlis2
+}
+
+const Subtract = () => {
+    return skaitlis1 - skaitlis2
+}
+ 
+const Multiply = (skaitlis1, skaitlis2) => {
+    return skaitlis1 + skaitlis2
+}
+
+const Divide = (skaitlis1, skaitlis2) => {
+    return skaitlis1 / skaitlis2
+}
+
+plusButton.addEventListener('click', () => {
+     console.log('Mani nospieda')
+})
