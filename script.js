@@ -1,8 +1,14 @@
-const input1 =  document.querySelector(".js-teksts")
-const plusButton = document.querySelector(".js-plus")
+const input1 =  document.querySelector(".js-teksts1")
+const input2 = document.querySelector(".js-teksts2")
+const plusButton = document.querySelector(".js-plus") 
+const minusButton = docuent.querySelector(".js-minus")
+const mutiplyButton = document.querySelector(".js-multiply")
+const divideButton = document.querySelector(".js-divide")
+const result = document.querySelector(".js-result")
+
 
 const Add = (skaitlis1, skaitlis2) => {
-    return skaitlis1 + skaitlis2
+    return Number(skaitlis1) + Number(skaitlis2)
 }
 
 const Subtract = () => {
@@ -18,5 +24,5 @@ const Divide = (skaitlis1, skaitlis2) => {
 }
 
 plusButton.addEventListener('click', () => {
-     console.log('Mani nospieda')
+     result.innerHTML = Add(input1.value, input2.value)
 })
